@@ -25,7 +25,7 @@ services:
       - emqx
       - mongo
 
-    command: sh -c "node index.js"
+    command: sh -c "npm run build && npm run start"
 
   mongo:
     container_name: mongo
