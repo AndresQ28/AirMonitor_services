@@ -26,6 +26,7 @@ services:
       - mongo
 
     command: sh -c "npm run build && npm run start"
+    #test
 
   mongo:
     container_name: mongo
