@@ -4,9 +4,9 @@ services:
   node:
     container_name: node
     image: "node:14"
-    working_dir: /home/node/app1
+    working_dir: /home/node/app
     volumes:
-      - ./app1/:/home/node/app1
+      - ./app/:/home/node/app
     ports:
       - "3000:3000"
       - "3001:3001"
