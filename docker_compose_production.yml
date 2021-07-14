@@ -23,8 +23,7 @@ services:
       - emqx
       - mongo
 
-    command: sh -c "npm run build && npm run start"
-    #test
+    command: sh -c "echo 'delaying 30 seconds' && sleep 30 && npm run start"
 
   mongo:
     container_name: mongo
@@ -45,6 +44,7 @@ services:
     container_name: emqx
     image: emqx/emqx:4.2.3
     restart: always
+
     ports:
       - 18083:18083
       - 1883:1883
