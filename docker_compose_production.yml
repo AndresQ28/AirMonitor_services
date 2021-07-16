@@ -23,7 +23,7 @@ services:
       - emqx
       - mongo
 
-    command: sh -c "npm run start"
+    command: sh -c "npm run dev && echo 'delaying 30 seconds' && sleep 30 && npm run devn"
 
   mongo:
     container_name: mongo
